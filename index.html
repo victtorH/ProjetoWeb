@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apógonos</title>
+    <link
+      rel="shortcut icon"
+      href="img/logo_apogonos_preto.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="response.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+<style>
+@media (max-width: 991px) {
+
+
+    .nav-links {
+      position: sticky;
+       right: -70%;
+    }
+
+    .header {
+        padding: 0 1rem; 
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        z-index: 1000; 
+        padding: 0.5rem;
+    }
+
+
+    .menu-icon span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    /* 1. ESTILO DO MENU ABERTO (A lista de links) */
+    .nav-links {
+        position: absolute;
+        top: 64px; 
+        right: 0;
+        width: 50%; 
+        height: calc(100vh - 70px); 
+        background: var(--verde-salvia);
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease-in-out;
+        z-index: 900; 
+    }
+
+    .nav-links ul {
+        flex-direction: column; 
+        padding: 1rem 0;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        width: 100%;
+    }
+
+    .nav-links ul a,
+    .nav-links ul .login {
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        
+        &.login {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 40px;
+            margin: 1rem auto;
+        }
+        
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: black;
+            border-bottom: none; 
+        }
+    }
+
+    .nav-links {
+        right: -70%;
+        display: none;
+    }
+
+
+    .menu-toggle:checked ~.nav-links {
+        right: 0%;
+        display: block;
+    }
+
+}
+
+
+
+
+</style>
+
+
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/logo_apogonos_preto.png" class="logo" alt="logo" />
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#home" id="home-link">home</a></li>
+          <li><a href="#sobre">sobre</a></li>
+          <li><a href="#produtos">produtos</a></li>
+          <li><a href="#avaliações">avaliações</a></li>
+          <li><a href="#contato">contato</a></li>
+        </ul>
+        <a href="login.html" class="login">login</a>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="img-inicio">
+          <img class="img1" src="img/img-inicio-1.png" alt="" />
+          <img class="img2" src="img/img-inicio-2.png" alt="" />
+          <img class="img3" src="img/img-inicio-3.png" alt="" />
+        </div>
+        <div class="content-inicio">
+          <h1>
+            Para todos <br />
+            <span>tamanhos e gostos</span>
+          </h1>
+          <p>
+            pensando no seu sono diario, criamos linhas para todas as
+            necessidades do bebê ao idoso
+          </p>
+
+          <a href="#produtos" class="btn-vermais">
+            ver mais <img src="img/seta-icon.svg" class="seta" alt="seta" />
+          </a>
+        </div>
+      </section>
+      <section id="sobre">
+        <img
+          src="img/Logo_mais_escrita.png"
+          class="img-apogonos"
+          alt="imagem da logo com a palavra apógonos "
+        />
+        <div class="direita_sobre">
+          <div class="squar1">
+            <h3>SURGIMENTO</h3>
+            <p>
+              A história da <strong>Apógonos começou em 1980</strong>, quando a fundadora, buscando o crescimento, iniciou a revenda de conforto. A iniciativa resultou na marca própria, estabelecendo nosso legado.
+            </p>
+          </div>
+          <div class="squar2">
+            <h3>NOSSO LEMA</h3>
+            <p>
+             <strong>Conforto é iniciativa. um  toque de gerações.</strong> A marca refuta a ideia de que o conforto é um luxo ocasional ou algo que se espera passivamente. Em vez disso, define o conforto como uma escolha ativa e uma decisão inteligente de priorizar a própria saúde.
+            </p>
+          </div>
+          <div class="squar3">
+            <h3>TRADIÇÃO</h3>
+            <p>
+         A "Apógonos" (que em grego remete a descendência, geração posterior) está diretamente ligada à fundação da empresa. A marca nasceu e se desenvolveu através de um <strong>legado de mãe para filha por três gerações consecutivas.</strong> Essa é a essência da tradição da Apógonos.
+            </p>
+          </div>
+          <div class="squar4">
+            <a href="#contato" class="btn-contato">
+              Contato<img src="img/seta-verde.svg" class="seta" alt="seta" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="produtos">
+        <div class="content-produtos">
+          <article class="card-produto card1">
+            <div>
+              <p><strong>R$150</strong></p>
+              <a href="login.html" class="btn-comprar">comprar</a>
+            </div>
+            <div>
+              <p><strong>Marrom Madeira Carvalho:</strong></p>
+              <p>
+                A iniciativa do design sólido.Representa a durabilidade da
+                herança, garantindo que seu conforto permaneça intacto por
+                gerações.
+              </p>
+            </div>
+          </article>
+          <article class="card-produto card2">
+            <div>
+              <p><strong>R$329</strong></p>
+              <a href="login.html" class="btn-comprar">comprar</a>
+            </div>
+            <div>
+              <p><strong>Rosa Neve Melancia:</strong></p>
+              <p>
+                O conforto que floresce. É o toque leve e envolvente que sua
+                pele merece, concretizando sua iniciativa de bem-estar. Sinta a
+                restauração.
+              </p>
+            </div>
+          </article>
+          <article class="card-produto card3">
+            <div>
+              <p><strong>R$200</strong></p>
+              <a href="login.html" class="btn-comprar">comprar</a>
+            </div>
+            <div>
+              <p><strong>Cinza Nuvem Chuvosa:</strong></p>
+              <p>
+                Tranquilidade é uma escolha ativa. Une a elegância à sensação de
+                conforto sereno e acolhedor, essencial para o seu sono
+                restaurador.
+              </p>
+            </div>
+          </article>
+        </div>
+        <h2>Destaques</h2>
+      </section>
+      <section id="avaliações">
+        <h2>avaliações</h2>
+        <div class="content-avaliacao">
+          <article class="card-avaliacao">
+            <img
+              src="img/ft-perfil1.jpg"
+              class="perfil-avaliacao perfil1"
+              alt=""
+            />
+            <div class="dados-avaliacao">
+              <h3>Sara</h3>
+              <p>
+                investimento na minha paz! A iniciativa de trocar meus lençóis
+                por Apógonos transformou meu sono. O toque é indescritível, a
+                sensação é de estar sendo abraçada. Acordo realmente restaurada.
+              </p>
+            </div>
+          </article>
+          <article class="card-avaliacao">
+            <img
+              src="img/ft-perfil2.jpg"
+              class="perfil-avaliacao perfil2"
+              alt=""
+            />
+            <div class="dados-avaliacao">
+              <h3>Raimundo</h3>
+              <p>
+                A qualidade do tecido é inegável, a durabilidade parece
+                promissora. Esperava uma variedade maior de cores, mas o
+                conforto é bom. Um produto sólido, que cumpre o que promete.
+              </p>
+            </div>
+          </article>
+          <article class="card-avaliacao">
+            <img
+              src="img/ft-perfil3.jpg"
+              class="perfil-avaliacao perfil3"
+              alt=""
+            />
+            <div class="dados-avaliacao">
+              <h3>Jose</h3>
+              <p>
+                legado de Apógonos é real. Percebi a diferença na primeira
+                lavagem: o tecido se mantém perfeito, sem bolinhas. É o conforto
+                que dura, e isso, para mim, é sinônimo de excelência.
+              </p>
+            </div>
+          </article>
+          <article class="card-avaliacao">
+            <img
+              src="img/ft-perfil4.jpg"
+              class="perfil-avaliacao perfil4"
+              alt=""
+            />
+            <div class="dados-avaliacao">
+              <h3>Alex</h3>
+              <p>
+                O conforto é, de fato, iniciativa. Troquei por Apógonos para
+                melhorar minhas manhãs e a performance é visível. O tecido é
+                respirável e a temperatura fica perfeita a noite toda.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contato">
+        <h2 class="titulo-apogonos">Nos mande uma mensagem !!</h2>
+        <form action="" method="post" class="formulario-apogonos">
+          <label for="Nome">Name</label>
+          <input type="text" name="Nome" class="input-curto" placeholder="Seu_Name_User" />
+          <label for="Assunto">Assunto</label>
+          <input type="text" name="Assunto" class="input-longo" placeholder="Fala_sobre..." />
+          <input type="text" class="texto-contato" placeholder="Seu_texto" />
+          <button class="btn-enviar">
+            enviar <img src="img/seta-icon.svg" class="seta" alt="seta" />
+          </button>
+          <div class="label-contatos">
+            <p>telefone:(11)972108611</p>
+            <p>email: apogonos@hotmail.com</p>
+          </div>
+        </form>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.731320262358!2d-46.41492942487652!3d-24.005263078497432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1db2e586da8d%3A0x271ae3e10bdc671e!2sFatec%20Praia%20Grande!5e0!3m2!1spt-BR!2sbr!4v1764323745374!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </main>
+    <footer>
+      <p><strong>&copy; 2025 Apogonos.</strong> Todos os direitos reservados</p>
+      <div class="footer-contato">
+        <p>contatos:</p>
+        <a href="https://wa.me/5511972108611?text= Olá, me interessei pelos produtos da Apógonos" target="_blank"><img class="contato" src="img/Whatsapp-icon.png" alt="icone do whatsapp" /></a>
+        <a href="https://www.instagram.com/apogonos_?igsh=d3VjMXhtN3E4ZHYz&utm_source=qr" target="_blank" ><img class="contato" src="img/instagram-icon.png" alt="icone do instagram" /></a>
+        <a href="https://www.facebook.com/share/1Ch7D3jF2E/?mibextid=wwXIfr" target="_blank"><img class="contato" src="img/facebook-icon.png" alt="icone do facebook" /></a>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

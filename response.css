@@ -1,0 +1,165 @@
+@media (max-width: 1400px) {
+  #home {
+    padding: 0rem;
+
+    .content-inicio {
+      margin-left: 2rem;
+    }
+
+    .img1 {
+      margin-left: 30px;
+    }
+
+    .img2 {
+      left: 10px;
+      width: 160px;
+      height: 180px;
+      border-radius: 1rem 2rem 2rem 1rem;
+    }
+
+    .img3 {
+      left: 18rem;
+      width: 230px;
+    }
+
+    h1 {
+      font-size: 43.3px;
+      span {
+        white-space: wrap;
+      }
+    }
+
+    .btn-vermais {
+      margin: 3rem 0rem 10rem 0rem;
+      top: 0;
+      width: 22rem;
+    }
+  }
+  #sobre {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .img-apogonos {
+      position: relative;
+      top: 0rem;
+    }
+  }
+
+  #produtos{
+    scroll-margin-top: 4rem;
+  }
+
+  .content-produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*LOGIN*/
+  .input-name,
+  .input-senha {
+    width: 25rem;
+  }
+  .btn-pedidos {
+    margin-left: 10%;
+  }
+  /*PEDIDOS*/
+          .cards{
+           height: 400px;
+        }
+        .cards > div:first-of-type > p ::before{
+           top: 57%;
+        }
+
+}
+
+@media (max-width: 991px) {
+
+.logo{
+   height: 3rem;
+  width: 3rem;
+ 
+}
+.login{
+   position: absolute;
+   left: 75%;
+
+}
+ul a {
+  margin-right: none;
+}
+.img-inicio{
+  display: none;
+}
+#sobre{
+  overflow-y: hidden;
+.direita_sobre{
+  display: flex;
+  flex-direction: column;
+ grid-template-columns: none;
+
+ .btn-contato{
+  border-radius: 2rem;
+}
+}
+ .img-apogonos {
+  width: 400px;
+  left: 3rem;
+ }
+}
+#produtos{
+  flex-direction: column-reverse;
+}
+  .content-produtos {
+    
+    display: flex;
+    grid-template-columns:none;
+  }
+
+.card-produto{
+   width: 350px;
+}
+
+#produtos h2{
+  font-size:4rem;
+  writing-mode:horizontal-tb;
+ transform: rotate(0deg);
+}
+.card-avaliacao {
+  flex-direction: column;
+  width: 5rem;
+   min-width: 400px;
+  max-width: 650px;
+}
+  /*LOGIN*/
+  #Login {
+   max-height: 80vh;
+  flex-direction: column;
+  height: auto;
+  img{
+    width: 95%;
+    height: 10rem;
+    top: 1rem;
+    left: 2%;
+    margin-bottom: 10%;
+  }
+}
+.login-direita{
+h1{
+  padding: 0;
+  left: 0rem;
+  top: -4rem;
+  white-space:nowrap;
+}
+}
+.form-login {
+  position: relative;
+  left: .5rem;
+  top: -4rem;
+  display: flex;
+  flex-direction: column;
+}
+.btn-pedidos {
+  margin-left: 25%;
+}
+      }
