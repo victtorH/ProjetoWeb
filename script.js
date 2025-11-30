@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mensagem += `\nAguardo a confirmação!!`;
 
-    const linkWhatsApp = `https://wa.me/5511972108611?text= ${encodeURIComponent(mensagem)}`;
+    const linkWhatsApp = `https://wa.me/5511972108611?text=${encodeURIComponent(mensagem)}`;
 
     window.open(linkWhatsApp, '_blank');
   });
