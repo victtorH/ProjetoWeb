@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apógonos</title>
     <link
       rel="shortcut icon"
@@ -10,7 +10,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="response.css">
+    <link rel="stylesheet" href="response.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,95 +26,7 @@
       rel="stylesheet"
     />
 <style>
-@media (max-width: 991px) {
 
-
-    .nav-links {
-      position: sticky;
-       right: -70%;
-    }
-
-    .header {
-        padding: 0 1rem; 
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        z-index: 1000; 
-        padding: 0.5rem;
-    }
-
-
-    .menu-icon span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: black;
-        margin: 5px 0;
-        transition: 0.4s;
-    }
-
-    /* 1. ESTILO DO MENU ABERTO (A lista de links) */
-    .nav-links {
-        position: absolute;
-        top: 64px; 
-        right: 0;
-        width: 50%; 
-        height: calc(100vh - 70px); 
-        background: var(--verde-salvia);
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-        transition: right 0.3s ease-in-out;
-        z-index: 900; 
-    }
-
-    .nav-links ul {
-        flex-direction: column; 
-        padding: 1rem 0;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    .nav-links ul li {
-        width: 100%;
-    }
-
-    .nav-links ul a,
-    .nav-links ul .login {
-        display: block;
-        width: 100%;
-        margin: 0;
-        text-align: left;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        
-        &.login {
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            width: 80%;
-            height: 40px;
-            margin: 1rem auto;
-        }
-        
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: black;
-            border-bottom: none; 
-        }
-    }
-
-    .nav-links {
-        right: -70%;
-        display: none;
-    }
-
-
-    .menu-toggle:checked ~.nav-links {
-        right: 0%;
-        display: block;
-    }
-
-}
 
 
 

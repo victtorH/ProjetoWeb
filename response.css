@@ -1,4 +1,4 @@
-@media (max-width: 1400px) {
+@media (max-width: 1320px) {
   #home {
     padding: 0rem;
 
@@ -73,26 +73,97 @@
 
 }
 
-@media (max-width: 991px) {
+@media (max-width: 900px) {
 
 .logo{
    height: 3rem;
   width: 3rem;
  
 }
-.login{
-   position: absolute;
-   left: 75%;
+    .header {
+        padding: 0 1rem; 
+    }
 
-}
-ul a {
-  margin-right: none;
-}
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        z-index: 1000; 
+        padding: 0.5rem;
+    }
+
+
+    .menu-icon span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    /* 1. ESTILO DO MENU ABERTO (A lista de links) */
+    .nav-links {
+        position: absolute;
+        top: 64px; 
+        right: 0;
+        width: 40%; 
+        height: auto; 
+        background-color: var(--verde-salvia);
+        box-shadow: -4px 2px 5px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease-in-out;
+        z-index: 900; 
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: start;
+        flex-direction: column-reverse;
+    }
+
+    .nav-links ul {
+        flex-direction: column; 
+        padding: 1rem 0;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        width: 100%;
+    }
+
+
+
+    .nav-links ul a {
+        display: block;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10%;
+        text-align: left;
+        
+        &:hover {
+            color: black;
+            border-bottom: none; 
+        }
+    }
+        .login{
+     margin: 5% 0%;
+    padding: 5% 20%;
+    }
+
+    .nav-links {
+        right: -70%;
+        display: none;
+    }
+
+
+    .menu-toggle:checked ~.nav-links {
+        right: 0%;
+        display: flex;
+    }
+
 .img-inicio{
   display: none;
 }
 #sobre{
-  overflow-y: hidden;
+
 .direita_sobre{
   display: flex;
   flex-direction: column;
@@ -103,8 +174,7 @@ ul a {
 }
 }
  .img-apogonos {
-  width: 400px;
-  left: 3rem;
+  width: 300px;
  }
 }
 #produtos{
@@ -163,3 +233,64 @@ h1{
   margin-left: 25%;
 }
       }
+
+@media (max-width: 560px) {
+
+.nav-links {
+   height: calc(100vh - 55vh); 
+}
+
+#home{
+  margin-left: 0rem;
+
+
+.content-inicio{
+  padding: 0rem;
+    .btn-vermais{
+    width: 15rem;
+    height: 3rem;
+  }
+  }
+}
+
+#sobre{
+  padding:0rem 2rem ;
+  align-items: center;
+  justify-content: center;
+   .img-apogonos {
+
+    width: 100%;
+   }
+   .direita_sobre{
+    
+   .btn-contato{
+  
+    width: 100%;
+  border-radius: 2rem;
+   }
+}
+}
+
+#avaliações{
+  padding:40px 20px;
+}
+.card-avaliacao {
+   min-width: 300px;
+}
+
+.content-avaliacao{
+  gap: 10px;
+}
+
+#contato{
+  padding: 0rem 1rem;
+}
+
+footer{
+.footer-contato{
+  left:18%;
+}
+}
+
+
+}
